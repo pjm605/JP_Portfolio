@@ -1,0 +1,21 @@
+{
+  "name": "jp_portfolio",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "pjm605 <pjm605@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "blueimp-gallery": "^2.22.0"
+  }
+}
