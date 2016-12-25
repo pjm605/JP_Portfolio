@@ -1,10 +1,10 @@
 import React, {PropTypes} from 'react';
 import TagList from './TagList';
-import Link from '../../FancyLink';
+import Link from '../Common/FancyLink';
 import s from './Portfolio.scss';
 
-const PortfolioItem = ({name, date, desc, tags, links, imgUrl, imgAlt, visited}) => {
-  const nameClass = visited ? "metadata__name visited" : "metadata__name";
+const PortfolioItem = ({name, date, desc, tags, links, imgUrl, imgAlt}) => {
+  const nameClass = "metadata__name";
 
   return (
     <li className="portfolio-item" >
@@ -15,8 +15,8 @@ const PortfolioItem = ({name, date, desc, tags, links, imgUrl, imgAlt, visited})
 
      <section className="portfolio-item__metadata">
       <p className={nameClass}>{name}</p>
-      <p className="metadata__date">{date}</p>
       <p className="metadata__desc">{desc}</p>
+      <p className="metadata__date">{date}</p>
       <div className="metadata__link">
         <i className="fa fa-codepen" aria-hidden="true"/> <Link url={links.code} text="Code"/>
       </div>
@@ -33,8 +33,7 @@ PortfolioItem.propTypes = {
   tags: React.PropTypes.array.isRequired,
   links: React.PropTypes.object.isRequired,
   imgUrl: React.PropTypes.string.isRequired,
-  imgAlt: React.PropTypes.string.isRequired,
-  visited: React.PropTypes.bool.isRequired
+  imgAlt: React.PropTypes.string.isRequired
 };
 
 export default PortfolioItem;
