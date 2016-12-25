@@ -1,0 +1,27 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import 'components/variables.scss';
+
+a.link-animated {
+  color: $teal;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: all .2s ease-in-out;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: $border-thickness;
+    background-color: color($teal lightness(+15%));
+    width: 0%;
+    display: block;
+    transition: width .5s ease-in-out;
+  }
+  &:hover {
+    color: color($teal lightness(+15%));
+    &:after {
+      width: 100%;
+    }
+  }
+}

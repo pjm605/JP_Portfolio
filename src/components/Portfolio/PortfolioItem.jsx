@@ -12,6 +12,7 @@ const PortfolioItem = ({name, date, desc, tags, links, imgUrl, imgAlt, visited})
       <img src={imgUrl} alt={imgAlt} className="portfolio-item__img" />
      </a>
 
+
      <section className="portfolio-item__metadata">
       <p className={nameClass}>{name}</p>
       <p className="metadata__date">{date}</p>

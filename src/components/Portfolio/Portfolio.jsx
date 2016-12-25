@@ -5,7 +5,7 @@ import s from './Portfolio.scss'
 
 const Portfolio = ({items, onClick}) => {
   return (
-    <ul className=".col-md-4 portfolio__list" onClick={onClick}>
+    <ul className="col-md-4 portfolio__list" onClick={onClick}>
       {items.map((item, index) => <PortfolioItem key={index} {...item}/>)}
     </ul>
  );

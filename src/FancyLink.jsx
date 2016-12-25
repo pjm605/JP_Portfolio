@@ -1,4 +1,5 @@
 import React, {PropTypes} from 'react';
+import s from './FancyLink.scss';
 
 const FancyLink = ({url, text}) => {
   return (
