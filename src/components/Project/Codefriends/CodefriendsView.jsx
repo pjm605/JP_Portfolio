@@ -1,13 +1,15 @@
 import React from 'react';
 import s from '../ProjectView.scss'
-
+import Link from '../../Common/FancyLink'
 
 export default class CodefriendsView extends React.Component {
 
   render() {
     const tools = [
       'Javascript',
-      'Angular',
+      'Node.js',
+      'Express',
+      'AngularJS',
       'PostgreSQL'
     ];
 
@@ -17,7 +19,8 @@ export default class CodefriendsView extends React.Component {
         codeFriends
         </div>
         <div className="project-view-summary">
-        	This is Summary. This is Summary. This is Summary.This is Summary.This is Summary. This is Summary.This is Summary. This is Summary. 
+        	A faux ecommerce website that allows users to purchase 'imaginary' friends.
+          Users can view, select, and add friends for purchase. It features login, guest checkout, and review. 
         </div>
         <div className="project-view-tech-label">Tech</div>
         <div className="project-view-tech">
@@ -25,7 +28,11 @@ export default class CodefriendsView extends React.Component {
             return <div className="project-view-tools" key={tool}>{tool}</div>;
           })}
         </div>
-          <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/3f/410337/ca6721410648eb6ad833d30594eedee3-original.png" style={{
+        <div className="project-view-link">
+          <Link url="https://github.com/kenzable/codeFriends" text="Github" />
+          <Link url="https://evening-bayou-19167.herokuapp.com" text="Website" />
+        </div>
+          <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/3f/410337/c946198e2e256f507aa543f70d8c44f1-original.png" style={{
             height: '100%',
             width: '100%',
             paddingTop: '2em'

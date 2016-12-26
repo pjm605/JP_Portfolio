@@ -5,12 +5,14 @@
 .projects-container {
   margin-top: 20px;
   padding: 20px;
-
+  
   #recent-projects {
     font-size: 2.5em;
     text-align: center;
     padding-bottom: 1em;
-    border-bottom: #DDD solid 1px
+    border-bottom: #DDD solid 1px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -22,13 +24,23 @@
 
   .project-title {
     text-align: left;
-    padding-bottom: 1em;
     flex-basis: 100%;
     font-size: 1.5em;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 30px;
+    margin-right: 30px;
+  };
+
+  .project-summary {
+    text-align: left;
+    padding-bottom: 1.5em;
+    flex-basis: 100%;
+    font-size: 0.8em;
+    letter-spacing: 0.4px;
+    margin-left: 30px;
+    margin-right: 30px;
+
   };
 
   .img-wrapper {
@@ -38,8 +50,8 @@
     border: 1px solid #d3d3d3;
     cursor: pointer;
     overflow: hidden;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 30px;
+    margin-right: 30px;
 
     &:hover {
       transform: scale(1.025);

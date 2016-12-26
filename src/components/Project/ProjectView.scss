@@ -6,7 +6,7 @@
   padding-right: 10%;
   padding-bottom: 5%;
   padding-top: 5%;
-  background-color:   #F0F8FF;
+
 
   .project-view-title {
     text-transform: uppercase;
@@ -18,7 +18,7 @@
   .project-view-summary {
     text-align: justify;
     padding-bottom: 1em;
-    border-bottom: 1px dotted $line-color;
+    border-bottom: #DDD solid 1px;
   }
 
   .project-view-tech-label {
@@ -35,10 +35,10 @@
     flex-wrap: wrap;
     cursor: default;
     padding-bottom: 1em;
-    border-bottom: 1px dotted $line-color;
+    border-bottom: #DDD solid 1px;
 
     .project-view-tools {
-      background: lighten($accent-blue, 10);
+      background:  #20B2AA;
       margin: 2px;
       padding-left: 1em;
       padding-right: 1em;
@@ -47,5 +47,19 @@
       font-size: 0.85em;
       color: white;
     }
+  }
+
+  .project-view-link {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+      .link-animated {
+        padding: 1em;
+      }
+  }
+
+  img {
+      border: 1px solid #d3d3d3;
   }
 }

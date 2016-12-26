@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+
 export default class PoesisCard extends React.Component {
   render() {
     return (
       <div className="project-card" id="poesis">
         <div className="project-title">
-        Poesis
+          Poesis  
+        </div>
+        <div className="project-summary">
+        Allows users to visually analyze poetry 
         </div>
         <div className="img-wrapper">
           <Link to={'Poesis'}>

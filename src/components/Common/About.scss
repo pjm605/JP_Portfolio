@@ -1,0 +1,47 @@
+@import '../../../node_modules/normalize.css/normalize.css';
+@import '../variables.scss';
+
+
+.section-header {
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 1em;
+    border-bottom: #DDD solid 1px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.about__container {
+	display: flex;
+  	flex-direction: column;
+}
+
+.about__name {
+	text-align: center;
+  	justify-content: center;
+  	font-size: 1.5em;
+  	padding-bottom: 1em;
+  	padding-top: 2em;
+}
+
+.about__title {
+  	text-align: center;
+  	font-size: 1.2em;
+  	justify-content: center;
+  	padding-bottom: 1.2em;
+}
+
+.about__body {
+  	font-size: 0.8em;	
+  	padding-bottom: 1em;
+}
+
+.about__link {
+	text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+      .link-animated {
+        padding: 1em;
+      }
+}
