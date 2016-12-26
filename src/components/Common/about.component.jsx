@@ -16,6 +16,7 @@ const About = () => {
           <Link url="https://www.linkedin.com/in/janice-park-b03053127" text="LinkedIn" />        
           <Link url="https://github.com/pjm605" text="Github" />
           <Link url="https://angel.co/janice-park" text="AngelList" />
+          <Link url="mailto:pjm605@gmail.com" text="Email" />
         </div>
       </div>
     </section>
