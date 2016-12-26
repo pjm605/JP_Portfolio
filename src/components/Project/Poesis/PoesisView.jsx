@@ -1,4 +1,5 @@
 import React from 'react';
+import s from '../ProjectView.scss'
 
 export default class PoesisView extends React.Component {
 
@@ -10,7 +11,7 @@ export default class PoesisView extends React.Component {
     ];
 
     return (
-      <div className="project-view view-container container">
+      <div className="project-view">
         <div className="project-view-title">
           Poesis
         </div>

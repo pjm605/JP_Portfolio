@@ -1,4 +1,5 @@
 import React from 'react';
+import s from '../ProjectView.scss'
 
 
 export default class CodefriendsView extends React.Component {

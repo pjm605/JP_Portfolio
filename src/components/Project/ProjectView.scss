@@ -1,0 +1,51 @@
+@import '../../../node_modules/normalize.css/normalize.css';
+@import '../variables.scss';
+
+.project-view {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  background-color:   #F0F8FF;
+
+  .project-view-title {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  .project-view-summary {
+    text-align: justify;
+    padding-bottom: 1em;
+    border-bottom: 1px dotted $line-color;
+  }
+
+  .project-view-tech-label {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 1.25em;
+    padding-bottom: 1em;
+  }
+
+  .project-view-tech {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    cursor: default;
+    padding-bottom: 1em;
+    border-bottom: 1px dotted $line-color;
+
+    .project-view-tools {
+      background: lighten($accent-blue, 10);
+      margin: 2px;
+      padding-left: 1em;
+      padding-right: 1em;
+      border: 1px transparent;
+      border-radius: 5px;
+      font-size: 0.85em;
+      color: white;
+    }
+  }
+}
