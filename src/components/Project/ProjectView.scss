@@ -52,14 +52,18 @@
   .project-view-link {
     text-transform: uppercase;
     text-align: center;
-    padding: 1em;
+    padding: 2em;
     font-size: 1em;
       .link-animated {
-        padding: 1em;
+        padding: 1.5em;
       }
   }
 
   img {
       border: 1px solid #d3d3d3;
+      width: 100%;
+      height: 100%;
+      padding: 0px !important;
   }
+
 }

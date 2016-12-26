@@ -14,7 +14,7 @@ const About = () => {
         </p>
         <div className="about__link">
           <Link url="https://www.linkedin.com/in/janice-park-b03053127" text="LinkedIn" />        
-          <Link url="https://github.com/pjm605/poesis" text="Github" />
+          <Link url="https://github.com/pjm605" text="Github" />
           <Link url="https://angel.co/janice-park" text="AngelList" />
         </div>
       </div>

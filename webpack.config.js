@@ -5,9 +5,12 @@ var precss = require('precss');
  
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8080', // WebpackDevServer host and port
-    './src/index' // Your appʼs entry point
+    'webpack-dev-server/client?http://localhost:8080', 
+    './src/index' 
   ],
+  devServer: {
+    historyApiFallback: true
+  },
   output: {
     path: path.resolve(__dirname, 'build'),
     publicPath: '/build/',
