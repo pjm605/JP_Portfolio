@@ -5,11 +5,13 @@ var precss = require('precss');
  
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8080', 
+    'webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/dev-server',
     './src/index' 
   ],
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
+    hot: true
   },
   output: {
     path: path.resolve(__dirname, 'build'),

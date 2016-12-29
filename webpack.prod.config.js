@@ -7,6 +7,10 @@ module.exports = {
   entry: [
     './src/index'
   ],
+  devServer: {
+    historyApiFallback: true,
+    hot: true
+  },
 
   output: {
     path: path.join(__dirname, 'build'),
@@ -16,17 +20,18 @@ module.exports = {
 
   plugins: [
     new webpack.optimize.DedupePlugin(),
+    
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
       compress: {
         warnings: false
       }
     }),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    })
   ],
 
   module: {
