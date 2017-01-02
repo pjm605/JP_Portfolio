@@ -1,4 +1,4 @@
-## Synopsis
+## Summary
 
 JP Portfolio is a responsive, simple portfolio written in React, express, babel, and Webpack.
 
@@ -10,7 +10,6 @@ http://www.jpportfolio.me
 ```
 $ npm install
 $ npm start
-
 ```
 
 Then visit
